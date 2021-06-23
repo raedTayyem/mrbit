@@ -39,13 +39,13 @@ export class EditContactComponent implements OnInit {
 
   addMovesToUser(): void {
     const moves = {
-      toId: this.contact.id,
+      toId: this.contact._id,
       to: this.contact.name,
       at: Date.now(),
       amount: this.amount,
     };
 
-    this.userService._addMoves(this.user[0], moves).subscribe(
+    this.userService._addMoves(this.user[0], moves, this.amount).subscribe(
       (response) => {
         console.log(response);
       },

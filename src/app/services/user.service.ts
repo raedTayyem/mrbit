@@ -60,9 +60,10 @@ export class UserService {
   //   return user._id ? this._addMoves(user) : this._addMoves(user);
   // }
 
-  public _addMoves(user: User, moves: any) {
+  public _addMoves(user: User, moves: any, amount: number) {
     _usersDb.push(user);
     _usersDb[0].moves.push(moves);
+    _usersDb[0].coins -= amount;
     return of(user);
   }
 

@@ -1,0 +1,16 @@
+<div class="create-contact">
+    <h3>NEW CONTACT</h3>
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" required [(ngModel)]="contact.name" name="name" />
+    </div>
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input class="form-control" id="email" required [(ngModel)]="contact.email" name="email" />
+    </div>
+    <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input class="form-control" id="phone" required [(ngModel)]="contact.phone" name="phone" />
+    </div>
+    <button (click)="createContact()">CREATE</button>
+</div>

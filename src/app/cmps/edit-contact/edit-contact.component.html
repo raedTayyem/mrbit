@@ -1,0 +1,33 @@
+<div class="edit-contact">
+    <!-- <div class="submit-form"> -->
+    <!-- <div > -->
+    <div class="submit-form">
+        <img src="https://i.pravatar.cc/150?u={{contact._id}}" class="userImg" />
+        <div class="contact-details">
+            <div class="form-group">
+                <!-- <label for="name">Name:</label> -->
+                <input type="text" class="form-control" id="name" required [(ngModel)]="contact.name" name="name" />
+            </div>
+            <div class="form-group">
+                <!-- <label for="email">Email:</label> -->
+                <input class="form-control" id="email" required [(ngModel)]="contact.email" name="email" />
+            </div>
+            <div class="form-group">
+                <!-- <label for="phone">Phone:</label> -->
+                <input class="form-control" id="phone" required [(ngModel)]="contact.phone" name="phone" />
+            </div>
+            <button (click)="saveContact()">save</button>
+        </div>
+    </div>
+
+    <div class="moves-action">
+        <h2>hey {{user[0].name}}send {{contact.name}} coins </h2>
+        <div class="send-coins">
+            <div class="form-group">
+                <label for="amount">Amount:</label>
+                <input class="form-control" id="amount" required name="amount" [(ngModel)]="amount" />
+            </div>
+            <button (click)="addMovesToUser()">send</button>
+        </div>
+    </div>
+</div>

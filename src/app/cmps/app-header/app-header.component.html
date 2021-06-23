@@ -1,0 +1,19 @@
+<div class="header header-fixed">
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://bitcoin.org/img/icons/opengraph.png?1621851118">
+            <a routerLink="/home">Mr.Bitcoin</a>
+        </div>
+        <input type="checkbox" id="navbar-toggle">
+        <label for="navbar-toggle"><i></i></label>
+        <nav class="menu">
+            <ul>
+                <li><a routerLink="/contacts">Contacts</a></li>
+                <li><a routerLink="statistics">Statistics</a></li>
+                <li *ngIf="!authService.getUser()"><a routerLink="login">Log In</a></li>
+                <li *ngIf="authService.getUser()" (click)="logout()"><a routerLink="/home" class="log-out">Log Out</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>

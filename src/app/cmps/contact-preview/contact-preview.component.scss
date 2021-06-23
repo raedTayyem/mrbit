@@ -1,0 +1,20 @@
+.contact-preview {
+  cursor: pointer;
+  margin-top: 50px;
+  max-width: 700px;
+  padding: 20px 0;
+  display: grid;
+  //   grid-row: 1fr 2fr;
+  grid-template-columns: 300px 200px;
+  justify-content: space-evenly;
+  box-shadow: 0 1px 3px #2121219f;
+  .userImg {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+  }
+  .userName {
+    font-size: 20px;
+    font-weight: bolder;
+  }
+}

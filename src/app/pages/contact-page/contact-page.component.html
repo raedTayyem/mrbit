@@ -1,0 +1,6 @@
+<div class="contact-app">
+    <contact-filter [filterBy]="filterBy" (onFilter)="onSetFilter($event)"></contact-filter>
+    <contact-list [contacts]="contacts$|async"></contact-list>
+    <add-contact [contact]="contacts$|async"></add-contact>
+    <router-outlet></router-outlet>
+</div>

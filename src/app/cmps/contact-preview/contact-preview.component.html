@@ -1,0 +1,10 @@
+<article class="contact-preview" [routerLink]="['/details',contact._id]">
+    <img src="https://i.pravatar.cc/150?u={{contact._id}}" class="userImg" />
+    <div>
+        <p class="userName">{{contact.name}}</p>
+        <div>
+            <p class="userEmail">{{contact.email}}</p>
+            <p class="userPhone">{{contact.phone}}</p>
+        </div>
+    </div>
+</article>

@@ -1,0 +1,41 @@
+.contact-filter {
+  top: 95px;
+  z-index: 12;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  // margin-left: 25%;
+  .search-bar {
+    display: flex;
+    box-shadow: 2px 3px 4px #80868b;
+    // border-radius: 0 12px 12px 0;
+    width: 40vw;
+    // justify-content: center;
+    align-items: center;
+    background-color: white;
+    input {
+      background-color: white;
+      border: white;
+      outline: none;
+      font-size: 1rem;
+      font-weight: 500;
+      width: 80%;
+      height: 40px;
+      z-index: 3;
+    }
+    .search-img {
+      z-index: 2;
+      background-color: rgb(0, 0, 0);
+      color: rgb(0, 0, 0);
+      opacity: 0.56;
+      border: 0px;
+      margin: 0 0.5rem;
+      outline: none;
+      width: 20px;
+      height: 20px;
+      background: url("https://image.flaticon.com/icons/png/128/3603/3603748.png")
+        no-repeat center center / cover;
+    }
+  }
+}

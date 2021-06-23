@@ -1,0 +1,10 @@
+<div class="contact-filter">
+    <label for="">
+        <div class="search-bar">
+            <div class="search-img"></div>
+            <input type="text" [(ngModel)]="filterByCopy.term" (ngModelChange)="onFilter.emit(filterByCopy)"
+                placeholder="search by name">
+        </div>
+
+    </label>
+</div>

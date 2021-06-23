@@ -1,0 +1,21 @@
+<!-- <div *ngIf="contact" class="contact-details">
+    <div>
+        <button (click)="onBack()">Back</button>
+        <img src="https://robohash.org/{{contact._id}}" />
+        <div class="contact-info">
+            <p>Name: {{contact.name}}</p>
+            <p>Age: {{contact.age}}</p>
+            <p>Age: {{contact.email}}</p>
+            <p>Birthday {{contact.phone'}}</p>
+        </div>
+        <a [routerLink]="['/contact',contact._id,'edit']">Edit Contact</a>
+        <div class="actions">
+            <button (click)="onDeleteContact()">Delete Contact</button>
+        </div>
+
+    </div>
+    <div>
+        <router-outlet></router-outlet>
+    </div>
+</div> -->
+<edit-contact [contact]='contact' [user]="user$|async"></edit-contact>

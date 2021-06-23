@@ -1,0 +1,28 @@
+<div class="register">
+    <div class="video-container">
+        <video autoplay loop>
+            <source
+                src="https://static.videezy.com/system/resources/previews/000/048/277/original/383A9674-20200401_Stock_market_screen.mp4"
+                type="video/mp4">
+        </video>
+    </div>
+    <div class="center signIn" *ngIf="!signUp">
+        <h1>Sign In</h1>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" required [(ngModel)]="user.email" name="email" />
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="text" class="form-control" id="password" required [(ngModel)]="user.password"
+                name="password" />
+        </div>
+        <a href="#" id="login">Login</a>
+        <a>You don't have account?! <h3 class="btn" (click)="signUp = true"><strong>Sign Up</strong></h3>
+        </a>
+    </div>
+    <div *ngIf="signUp">
+        <sign-up [user]='user'></sign-up>
+    </div>
+
+</div>
